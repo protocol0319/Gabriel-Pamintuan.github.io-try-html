@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Own website</title>   
+
+    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="js/script.js">
+     
+
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "6c-H6oJK4SunwlHTL",
+      });
+   })();
+</script>
+       
+    </head>
+
+<body>
+
+
+
+   
+
+    <!-- HEADER -->
+    <header>
+ 
+<a href="#home" class="logo">Gabriel</a>
+        <nav>
+            <a href="#home" onclick="scrollToHome(event)">Home</a>
+            <a href="#About" onclick="scrollToAbout(event)">About</a>
+            <a href="#contact" onclick="scrollToContact(event)">Contact</a>
+        </nav>
+ 
+    </header>
+
+
+ <section class="home" id="home">
+        <!---home-->
+<div class="glass-container">
+      
+        <div class="home-img">
+            <img src="image/image.png" alt="Gabriel">
+        </div>
+
+        <div class="glass-content">
+
+            <h1>Hi!, It's <span>Gabriel Pamintuan</span></h1>
+
+            <h3 class="Typing-text">
+                I'm <span>New in web development</span>
+            </h3>
+
+            <p>
+                Im a Grade 11 student, and my strand is TechPro-ISP or ICT. 
+                I'm exploring coding like Java and HTML. My goal is 
+                to become a skilled web developer in the future.
+            </p>
+<a href="#" class="button" onclick="showSocials(event)">
+    Social Media
+</a>
+            <div class="social-icons" id="socialIcons">
+                <a href="https://www.facebook.com/Gabriel.pamintuan26" target="_blank">
+                    <i class="fa-brands fa-facebook"></i></a>
+
+                <a href="https://www.instagram.com/gbrlpmntn/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i></a>
+
+                <a href="https://www.tiktok.com/@gabrielpamintuan5" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i></a>
+
+                 <a href="https://www.threads.com/@gbrlpmntn" target="_blank">
+                    <i class="fa-brands fa-threads"></i></a>   
+
+            </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="About" id="About">
+        <h1>About Me</h1>
+        <h3>coming soon</h3>
+<p>Just wait for the update im working on the update, thank you and goodbless!🤩🙌</p>
+
+</section>  
+
+
+<section class="contact" id="contact">
+
+    <div class="contact-container">
+
+        <form action="" class="contact-center">
+
+            <div class="contact-center-title">
+                <h2>Get In Touch</h2>
+                <hr>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="button" onclick="sendEmail(event)">Send</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+    </section>
+   
+   
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html> 
